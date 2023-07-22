@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 /* Basic CSS reset to remove default padding and margins */
 body,
 h1,
