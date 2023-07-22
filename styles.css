@@ -1,0 +1,99 @@
+/* Basic CSS reset to remove default padding and margins */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+code {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive layout for the navigation bar */
+#navbar {
+  background-color: #3e3e3c;
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align elements to the top */
+  align-items: flex-start; /* Align elements to the left */
+  height: 100vh; /* Full height of the viewport */
+  width: 200px; /* Width of the navbar */
+  padding: 20px;
+  position: fixed; /* Keeps the navbar fixed while scrolling */
+}
+
+#navbar header {
+  margin-bottom: 30px;
+}
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0; /* Add vertical spacing between links */
+}
+hr {
+  width: 100%;
+  background-color: orange;
+  border-radius: 1px;
+}
+
+/* Style for the main content area */
+#main-doc {
+  margin-left: 240px; /* Give space for the navbar */
+  padding: 20px;
+  background-color: rgb(138, 108, 51);
+}
+
+/* Responsive font size for better readability on smaller screens */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Adjust spacing for smaller screens */
+  #navbar {
+    width: 100%; /* Make the navbar full width on smaller screens */
+    height: auto; /* Allow content to determine the height */
+    position: relative; /* Reset the position for content flow */
+    margin-bottom: 0px; /* Add spacing below the navbar for smaller screens */
+  }
+
+  #navbar a {
+    margin: 10px; /* Add spacing for smaller screens */
+  }
+
+  /* Adjust the left margin for the main content area */
+  #main-doc {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+}
+
+code {
+  background-color: #3e3e3c;
+  color: rgb(138, 108, 51);
+  width: 80%;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+section{
+    margin: 20px 0;
+}
+section p{
+    margin: 10px 0;
+}
+section header{
+    margin: 10px 0;
+}
+section ul{
+    margin: 10px 0;
+}
