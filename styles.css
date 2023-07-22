@@ -2,21 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Basic CSS reset to remove default padding and margins */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-code {
-  margin: 0;
-  padding: 0;
-}
+
 
 /* Responsive layout for the navigation bar */
 #navbar {
+    border-radius:8px;
   background-color: #3e3e3c;
   color: #fff;
   display: flex;
@@ -28,7 +18,6 @@ code {
   padding: 20px;
   position: fixed; /* Keeps the navbar fixed while scrolling */
 }
-
 #navbar header {
   margin-bottom: 30px;
 }
@@ -48,6 +37,7 @@ hr {
   margin-left: 240px; /* Give space for the navbar */
   padding: 20px;
   background-color: rgb(138, 108, 51);
+  border-radius:8px;
 }
 
 /* Responsive font size for better readability on smaller screens */
@@ -58,14 +48,17 @@ body {
 @media (max-width: 768px) {
   body {
     font-size: 14px;
+    width:100%;
+    margin:0;
   }
-
+  
   /* Adjust spacing for smaller screens */
   #navbar {
     width: 100%; /* Make the navbar full width on smaller screens */
     height: auto; /* Allow content to determine the height */
     position: relative; /* Reset the position for content flow */
-    margin-bottom: 0px; /* Add spacing below the navbar for smaller screens */
+   /* Add spacing below the navbar for smaller screens */
+    text-align:center;
   }
 
   #navbar a {
@@ -77,6 +70,7 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-top: 0;
+   
   }
 }
 
