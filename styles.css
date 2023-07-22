@@ -77,12 +77,14 @@ body {
 }
 
 code {
-  background-color: #3e3e3c;
-  color: rgb(138, 108, 51);
+  background-color: rgb(138, 108, 51);
+  color: rgb(174, 174, 174);
   width: 80%;
   margin: 20px auto;
   padding: 5px;
   border-radius: 5px;
+  
+  font-size:0.7rem;
 }
 
 section{
@@ -94,6 +96,8 @@ section p{
 section header{
     margin: 10px 0;
 }
-section ul{
-    margin: 10px 0;
+section ul{ 
+    margin: 20px auto;
+    padding-left:18px;
+
 }
